@@ -1,0 +1,395 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", "Roboto", sans-serif;
+    
+}
+
+body {
+    line-height: 1.6;
+    background-color: #EEE2DE;
+}
+
+section {
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+}
+
+section ul {
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+
+nav {
+    background: #2B2A4C; 
+    color: #fff;
+    padding: 15px; 
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s; 
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.menu li {
+    margin-right: 20px;
+}
+
+nav ul.menu li:last-child {
+    margin-right: 0;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+    color: #f1f1f1;
+}
+
+nav.scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.home {
+    padding-top: 170px; 
+    min-height: 100vh; 
+}
+
+.home .img {
+    width: 300px; 
+    height: auto; 
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 20px; 
+    float:right;
+}
+
+
+.home .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.home .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
+
+.home .col-6 {
+    width: 50%; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.home .col-6:last-child {
+    width: 40%; 
+    padding-bottom: 40px;
+}
+
+
+.home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.home .col-6 h2 {
+    font-size: 50px;
+    color: #B31312;
+    margin-bottom: 10px;
+}
+
+.home .col-6 p {
+    font-size: 20px;
+    color: black;
+    line-height: 1.6;
+}
+
+.download-button {
+    font-size: 12px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #EA906C; 
+    color: white;
+    text-decoration: none;
+    border: none; 
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+.download-button:hover {
+    background-color: #D77E5A;
+}
+
+
+
+.experience {
+    text-align: center; 
+    background-color: #070F2B;
+    color: white;
+}
+
+.experience .container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0; 
+    width: 2px;
+    height: 65%;
+    background: #999;
+}
+
+.timeline li {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+
+.timeline-content {
+    padding-left: 40px; 
+    position: relative;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+.timeline li:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    z-index: 1; 
+    transform: translateX(-50%);
+}
+
+
+.timeline li:nth-child(odd):before {
+    background: grey; 
+}
+
+.timeline li:nth-child(even):before {
+    background: white; 
+}
+
+.education {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.education h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+
+.education .card {
+    padding-top: 10px;
+    max-width: 550px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin: 0 0; 
+}
+
+.education .card img {
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+}
+
+.education .card-details {
+    padding: 20px;
+    flex: 1; 
+}
+
+.education .card-details h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.education .card-details p {
+    margin: 5px 0;
+}
+
+.projects {
+    padding: 80px 0;
+    background-color: #070F2B;
+    color: white;
+}
+
+.projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.app-projects .project .documentation,
+.graphic-design-projects .project .documentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-projects .project .documentation img,
+.graphic-design-projects .project .documentation img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.app-projects {
+    background-color: #001F3F; 
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.graphic-design-projects {
+    background-color: #fff; 
+    color: #000; 
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.app-projects h3,
+.graphic-design-projects h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.app-projects .project,
+.graphic-design-projects .project {
+    margin-bottom: 30px;
+}
+
+.app-projects .project h4,
+.graphic-design-projects .project h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app-projects .project p,
+.graphic-design-projects .project p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#contact {
+    background-color: #000; 
+    color: #fff; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links a {
+    margin: 0 15px;
+}
+
+.contact-links img {
+    width: 40px;
+    height: 40px;
+}
